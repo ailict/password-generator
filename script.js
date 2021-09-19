@@ -2,12 +2,16 @@
 var generateBtn = document.querySelector("#generate");
 
 // create variables
-var character;
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbers = "0123456789";
+var special = "!@#$%^&*_-+=";
+
 
 
 // create a function for 8 characters
-function characters(){
-  var character = window.confirm("Include at least 8 characters (but not more than 128)?");
+function charactercount(){
+  window.confirm("By utilizing this site, a password will be generated for you between 8 and 128 characters. Please answer the following prompts for password customization.");
 }
 
 // create a function to include lowercase
@@ -23,19 +27,19 @@ function characters(){
 
 
 //generate password
+function generatePassword()
 
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
 
 //execute character function
-characters()
+charactercount();
+generatePassword;
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
