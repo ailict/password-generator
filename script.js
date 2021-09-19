@@ -34,6 +34,7 @@ var confirmSpecial = confirm("Include special characters?")
     else {
       alert("This function is not available at this time.")
     }
+    return password;
   }
 }
 
