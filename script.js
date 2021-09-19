@@ -15,16 +15,24 @@ function charactercount(){
 }
 
 // create a function to include lowercase
-
+function confirmLowercase(){
+  window.confirm("Include lowercase characters?")
+}
 
 // create a function to include uppercase 
-
+function confirmUppercase(){
+  window.confirm("Include uppercase characters?")
+}
 
 // create a  function to include numeric 
-
+function confirmNumbers(){
+  window.confirm("Include numbers?")
+}
 
 // create a function to include special characters
-
+function confirmSpecial(){
+  window.confirm("Include special characters?")
+}
 
 //generate password
 function generatePassword()
@@ -39,7 +47,16 @@ function writePassword() {
 
 //execute character function
 charactercount();
-generatePassword;
+
+confirmLowercase();
+
+confirmUppercase();
+
+confirmNumbers();
+
+confirmSpecial();
+
+generatePassword();
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
