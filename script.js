@@ -2,7 +2,9 @@
 var generateBtn = document.querySelector("#generate");
 
 // create a function for 8 characters
-
+function characters(){
+  window.confirm("Include at least 8 characters (but not more than 128)?");
+}
 
 // create a function to include lowercase
 
@@ -24,6 +26,9 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
+//call character function
+characters()
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
