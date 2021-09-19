@@ -18,7 +18,7 @@ var confirmUppercase = confirm("Include uppercase letters?")
 var confirmNumbers = confirm("Include numbers?")
 var confirmSpecial = confirm("Include special characters?")
 
-  for (i =0; i < passwordLength; i++) {
+  for (i = 0; i = passwordLength; i++) {
     if (confirmLowercase) {
       password += lowercase[Math.floor(Math.random() * passwordLength)];
     }
