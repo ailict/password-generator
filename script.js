@@ -1,40 +1,21 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// create variables
-var password = ""
+// generate password
+function generatePassword() {
+
+var password = "";
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
 var special = "!@#$%^&*_-+=";
 
-// create a function for 8 characters
-function charactercount(){
-  window.alert("By utilizing this site, a password will be generated for you between 8 and 128 characters. Please answer the following prompts for password customization.");
+if {
+  var confirmLowercase = window.confirm("Include lowercase letters?")
+  var confirmUppercase = window.confirm("Include uppercase letters?")
+  var confirmNumbers = window.confirm("Include numbers?")
+  var confirmSpecial = window.confirm("Include special characters?")
 }
-
-// create a function to include lowercase
-function lowercaseQuestion(){
- var confirmlowercase = window.confirm("Include lowercase characters?");
-}
-
-// create a function to include uppercase 
-function uppercaseQuestion(){
-  var confirmuppercase = window.confirm("Include uppercase characters?");
-}
-
-// create a  function to include numeric 
-function numbersQuestion(){
-  var confirmnumbers = window.confirm("Include numbers?");
-}
-
-// create a function to include special characters
-function specialQuestion(){
-  var confirmspecial = window.confirm("Include special characters?");
-}
-
-//generate password function
-function generatePassword() {
 
 }
 
@@ -46,16 +27,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
-//execute functions in order
-charactercount();
 
-lowercaseQuestion();
-
-uppercaseQuestion();
-
-numbersQuestion();
-
-specialQuestion();
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
