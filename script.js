@@ -12,14 +12,13 @@ var special = "!@#$%^&*_-+=";
 
 var passwordLength = prompt("Choose a password length between 8 and 128 characters", "12");
     passwordLength = parseInt(passwordLength);
-    console.log(passwordLength);
 
-var confirmLowercase = window.confirm("Include lowercase letters?")
-var confirmUppercase = window.confirm("Include uppercase letters?")
-var confirmNumbers = window.confirm("Include numbers?")
-var confirmSpecial = window.confirm("Include special characters?")
+var confirmLowercase = confirm("Include lowercase letters?")
+var confirmUppercase = confirm("Include uppercase letters?")
+var confirmNumbers = confirm("Include numbers?")
+var confirmSpecial = confirm("Include special characters?")
 
-  for (i =0; i < passwordLength; i++ {
+  for (i =0; i < passwordLength; i++) {
     if (confirmLowercase) {
       password += lowercase[Math.floor(Math.random() * passwordLength)];
     }
