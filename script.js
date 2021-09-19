@@ -1,8 +1,20 @@
-// Assignment code here
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+// create a function for 8 characters
+
+
+// create a function to include lowercase
+
+
+// create a function to include uppercase 
+
+
+// createa  function to include numeric 
+
+
+// create a function to include special characters
+
 
 // Write password to the #password input
 function writePassword() {
