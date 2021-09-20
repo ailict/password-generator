@@ -18,5 +18,5 @@ Here is where you enter
 <img src="assets/passwordscreen1.png">
 
 Here is what is generated 
-<img src="assets/passwordscreen2.png>
+<img src="assets/passwordscreen2.png">
 
