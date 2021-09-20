@@ -14,6 +14,9 @@ Aili's notes:
 
 - Input is working correctly, prompts are working correctly, but unable to make the password length actually force the length the user input. I believe it's something in the "for" function with i, and maybe setting i to the password length, but that didn't run the loop... tried adding mimimum length of the password length to the math.floor functions and it created undefined errors for my variables. 
 
+Here is where you enter
 <img src="assets/passwordscreen1.png">
+
+Here is what is generated 
 <img src="assets/passwordscreen2.png>
 
